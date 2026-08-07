@@ -1,0 +1,22 @@
+# Private working files. Drafts and raw notes never ship.
+/_private/
+/drafts/
+*.draft.md
+notes.md
+scratch.md
+
+# System and editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Env and secrets
+.env
+.env.*
+*.local
+
+# Archived working material, not shipped
+/_archive/
