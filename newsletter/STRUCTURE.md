@@ -8,13 +8,15 @@ Every weekly edition of Governance Signals follows the same shape, so they stack
 2. **Cover headline**, the single biggest story of the week, plain and specific. Not a grand monthly thesis, just what mattered most this week.
 3. **This week in 60 seconds**, three or four bullets, then the one-sentence throughline that ties the week together.
 4. **01 Policy and regulation**, what moved on rules, with a plain-terms explainer under each item.
-5. **02 Company watchlist**, a pass over the labs, clouds, and compute players. Note who moved and who went quiet.
+5. **02 Company watchlist**, a pass over the fixed core roster (see `../landscape/news/2-company-watchlist.md`), one line each. Write a company up only when its news touches safety, security, governance, observability, or responsible AI. Note who went quiet. A wider rotation bench appears only on significant news.
 6. **03 Startups (Series D and below)**, governance, observability, evals, agent frameworks, AI safety, responsible AI.
 7. **04 Trends moving this week**, only the throughlines the news actually bent, pulled from `landscape/trends/`.
 8. **05 Compete and whitespace**, the five forces read, and the open lane nobody has claimed.
 9. **06 Data**, a quant stat table and one or two qualitative quotes.
 
 ## The rules that make it credible
+
+**Keep the news to the past seven days.** Every item in the news sections (Policy and regulation, Incidents and safety, Company watchlist, Startups) must have happened in the last seven days. Cut anything older, even if it is interesting. Two exceptions. One, the Trends section can build on longer-running developments, since that is its whole job, and it should date the older items so the reader sees the arc. Two, inside a this-week item you can reference something older when it is the direct background to the news you are covering (for example, noting a June executive order when the news is this week's meeting about it). The test: is the news itself from the past seven days? If yes, older context is fine. If the news itself is old, cut it.
 
 **Name the actor.** Never write "Washington," "the US," "Brussels," or "the government" when you can name the specific office, official, or administration behind a move. Not "the US finalized voluntary tests," but "the Trump administration finalized voluntary tests, announced by a White House official." Not "the AI safety chief resigned," but "Chris Fall, director of CAISI, the Commerce Department's AI safety arm, resigned." The specificity is what makes it read like reporting instead of a summary. If you cannot verify the name or office, say so rather than staying vague or guessing.
 

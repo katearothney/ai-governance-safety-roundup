@@ -1,26 +1,65 @@
 # Company watchlist
 
-*Rolling, past two weeks. Last updated: August 7, 2026.*
+*Rolling, past week. Last updated: August 7, 2026.*
 
-The companies I check every cycle, whether or not they made news, because silence is a signal too. Each entry is the current move plus what I am watching next.
+The watchlist has two tiers. The **core** is covered every single week, with a one-line update on each, and a quiet week gets noted, because silence is a signal too. The **rotation** is a bench of companies that only appear when they make real news.
 
-## Frontier labs
-- **Anthropic.** Shipped Claude Opus 5 with a system card, and RSP v3.0 dropped the original pledge to not train unless safety was proven first. Its up-to-200-million-dollar Department of Defense deal moves the safety brand into national-security work. Watch: whether the governance edge survives the walk-back. ([TIME](https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/))
-- **OpenAI.** GPT-5.6 shipped with a work agent that produces finished documents, and the company backed state-plus-federal AI safety action. Watch: agent pricing, and whether the enterprise governance story holds against its consumer reach. ([OpenAI](https://openai.com/index/advancing-ai-safety-through-state-and-federal-action/))
-- **Google.** Gemini 3.6 Flash leads on price and efficiency, riding distribution through Search, Workspace, and its own chips. Watch: whether it makes safety a front-line message or keeps it back-office.
-- **Meta.** The open-weight flagship and the notable holdout on the EU Code. Watch: how far the open position stretches against regulation.
-- **xAI.** Fast-moving, thin governance surface. Watch: whether safety commitments catch up to release speed.
+**The lens.** Only write a company up when its news touches safety, security, governance, observability, or responsible AI (or the market and policy dynamics that flow from those). A pure product or model launch with no safety, security, or governance angle does not earn a write-up, it stays "quiet." This is a governance-and-safety watchlist, not a product-launch feed.
 
-## Challengers and international
-- **Mistral.** Shipped ShieldStral, an open-weights safety classifier, playing the European-and-compliant card as the EU rules bite. Watch: whether "compliant by design" becomes its wedge. ([Mistral](https://mistral.ai/news/shieldstral))
-- **DeepSeek and Alibaba (Qwen).** Keep setting the price floor with cheap, capable open models. Watch: enterprise traction outside China, and the Western policy response.
-- **Cohere.** Enterprise and retrieval focus. Watch: whether the governance-first pitch lands.
+## The core (every week)
 
-## Clouds and compute
-- **Microsoft.** Published a "rethinking security for the age of AI" push, packaging safety and security as enterprise selling points. Watch: how it bundles compliance into the Copilot and Foundry story. ([Microsoft](https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/))
-- **AWS and Google Cloud.** Both racing to make the governed path the default path through Bedrock Guardrails, Vertex, and Model Armor. Watch: governed deployment as the headline enterprise pitch.
-- **NVIDIA.** Turned security into an ecosystem play with the 100-plus-partner Open Secure AI Alliance. Watch: safety as an infrastructure feature. ([NVIDIA](https://blogs.nvidia.com/blog/open-secure-ai-alliance/))
-- **IBM and Databricks.** Quiet on governance this cycle. IBM keeps a compliance-buyer education surface, and Databricks is heads-down on the data-and-agents platform. Watch: whether either makes a governance move.
+The companies at the forefront of the AI space, the ones defining capability, deployment, compute, and the governance story.
 
-## What it means
-For product marketers, the tell this cycle is that every major player is now pairing a model or product move with a governance or safety story. A watchlist is most useful for the silences: a company that goes quiet on governance while its peers ship trust stories is either behind or about to move.
+**Frontier labs**
+- **OpenAI**, the consumer default, pushing hardest on agents.
+- **Anthropic**, safety-branded, enterprise and coding strength.
+- **Google (DeepMind)**, distribution plus its own chips.
+- **Meta**, the open-weight flagship and the EU holdout.
+- **xAI**, fast-moving, thin governance surface.
+- **Mistral**, Europe's lab, playing the compliant-by-design card.
+
+**Clouds**
+- **Microsoft**, the OpenAI partner and biggest enterprise distribution.
+- **Amazon (AWS)**, Bedrock and the governed-deployment pitch.
+- **Oracle**, the fast-growing AI-infrastructure buildout.
+
+**Consumer and platform**
+- **Apple**, on-device AI and the privacy-governance angle.
+
+**Compute**
+- **NVIDIA**, the training market and now safety tooling.
+- **AMD**, the main challenger.
+
+**Enterprise, data, and governance**
+- **IBM**, the compliance-buyer education surface.
+- **Cohere**, enterprise and retrieval, governance-first pitch.
+- **Databricks**, the data-and-AI platform.
+- **Snowflake**, the data platform peer.
+- **Palantir**, enterprise and government AI deployment.
+
+**Open ecosystem**
+- **Hugging Face**, the open-model hub, where open safety tooling lives.
+
+**Open source and frameworks**
+- **LangChain (and LangSmith)**, the leading agent framework and its observability layer.
+- **CrewAI**, the fast-growing multi-agent orchestration framework.
+- **AutoGen (AG2)**, the multi-agent framework out of the Microsoft ecosystem.
+- **LlamaIndex**, the data-and-retrieval framework.
+- **DSPy**, programmatic prompting and optimization, out of Stanford.
+- **vLLM**, the open inference-serving engine.
+- **Ollama**, the easiest way to run open models locally.
+- **Guardrails AI**, open runtime guardrails for model inputs and outputs.
+- **MCP (Model Context Protocol)**, the emerging open standard for connecting agents to tools and data. Worth watching as the interoperability layer.
+
+## The rotation (only on significant news)
+
+Track these, but only write them up when they actually move. China labs are tracked here rather than in the core, because for this audience they matter most through the price and market trend.
+
+- **China**: DeepSeek, Alibaba (Qwen), Moonshot AI, ByteDance, Baidu.
+- **Compute and infrastructure**: Broadcom, TSMC, Intel, CoreWeave, Groq, Cerebras.
+- **Enterprise and apps**: Salesforce, ServiceNow, SAP, Adobe, Scale AI.
+- **AI-native**: Perplexity, Anysphere (Cursor), Glean, Together AI.
+
+## How it feeds the newsletter
+
+Every edition does a pass over the full core, one line each. Rotation companies appear only when they break real news that week. The safety and security startups (Series D and below) are tracked separately, in [3-startups.md](3-startups.md).

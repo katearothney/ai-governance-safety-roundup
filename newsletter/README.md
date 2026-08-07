@@ -12,6 +12,8 @@ If the rest of the repo is the reusable structure, this folder is the showcase: 
 
 Every edition follows the same shape. The full spec is in [**STRUCTURE.md**](STRUCTURE.md), and [**_TEMPLATE.html**](_TEMPLATE.html) is the blank you copy each week.
 
+The reusable generation prompt, the exact lens, depth, and format, is in [**PROMPT.md**](PROMPT.md). Paste it or let the skill run it, and every edition comes out the same quality.
+
 The shape: a cover headline (the week's biggest story), a 60-second TL;DR, then the sections, Policy and regulation, Company watchlist, Startups, Trends, Compete and whitespace, and Data (a quant table plus qualitative quotes). Three rules make it credible: name the actor (the specific office or official, not just "the US"), explain the substance in plain terms (what a rule actually requires, not just that it happened), and split sources into Primary (the regulator or company) and Coverage (a news or analysis take).
 
 ## How an edition is made
