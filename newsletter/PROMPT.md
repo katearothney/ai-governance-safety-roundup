@@ -48,11 +48,14 @@ First person, present tense, contractions, concrete words. No em dashes. No semi
 3. **This week in 60 seconds**, three factual bullets.
 4. **01 Policy and regulation**, with plain-terms explainers.
 5. **02 Incidents and safety**, allegation kept separate from proven fact, harm handled with care.
-6. **03 Company watchlist**, the full fixed core roster, one line each, written up only on safety, security, governance, or observability news. Note who went quiet.
-7. **04 Startups**, Series D and below. If nothing happened this week, say so.
-8. **05 Trends moving this week**, only the throughlines the news bent, building on longer arcs and dating them.
-9. **06 Compete and whitespace**, the five forces read, and the open lane.
-10. **07 Data**, a quant stat table and a short qualitative read of how the week is being framed.
+6. **03 Company watchlist**, the fixed core roster, written up only on safety, security, governance, or observability news. Collapse the quiet ones into one line.
+7. **04 Startups**, Series D and below. Skip if nothing moved.
+8. **05 Trends**, the throughlines this week's stories organically surfaced, and how this week builds on earlier editions. Not a fixed checklist. Only a trend a story this week actually moved, or a clear next chapter of a prior arc.
+9. **06 On the radar**, a forward calendar of upcoming deadlines, comment periods, expected releases, hearings, and events, dated where known. This is the section readers forward to their teams.
+10. **07 Deep dive**, one durable concept explained in about 150 words (content provenance, ISO 42001, agent sandboxing, an eval method), so the edition is a reference, not just news.
+11. **08 Data**, a fresh quant stat table (numbers not already used in the body) plus a short qualitative read of how the week is being framed.
+
+Two things thread through every news item: **tag it by area** (Governance, Safety, Security, Observability, Responsible AI) so readers scan their slice, and **end it with a concrete "what it means"** for the relevant persona (product marketer, product manager, researcher, policy lead), the actual move, not a platitude.
 
 ### Step 5: Output
 

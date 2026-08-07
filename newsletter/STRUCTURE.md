@@ -8,11 +8,18 @@ Every weekly edition of Governance Signals follows the same shape, so they stack
 2. **Cover headline**, the single biggest story of the week, plain and specific. Not a grand monthly thesis, just what mattered most this week.
 3. **This week in 60 seconds**, three or four bullets, then the one-sentence throughline that ties the week together.
 4. **01 Policy and regulation**, what moved on rules, with a plain-terms explainer under each item.
-5. **02 Company watchlist**, a pass over the fixed core roster (see `../landscape/news/2-company-watchlist.md`), one line each. Write a company up only when its news touches safety, security, governance, observability, or responsible AI. Note who went quiet. A wider rotation bench appears only on significant news.
-6. **03 Startups (Series D and below)**, governance, observability, evals, agent frameworks, AI safety, responsible AI.
-7. **04 Trends moving this week**, only the throughlines the news actually bent, pulled from `landscape/trends/`.
-8. **05 Compete and whitespace**, the five forces read, and the open lane nobody has claimed.
-9. **06 Data**, a quant stat table and one or two qualitative quotes.
+5. **02 Incidents and safety**, breaches, eval failures, real-world harm, allegation kept separate from proven fact.
+6. **03 Company watchlist**, a pass over the fixed core roster (see `../landscape/news/2-company-watchlist.md`). Write a company up only when its news touches the lens. Collapse the quiet ones into one line. A rotation bench appears only on significant news.
+7. **04 Startups (Series D and below)**, governance, observability, evals, agent frameworks, AI safety, responsible AI. Skip if nothing moved.
+8. **05 Trends**, the throughlines this week's stories organically surfaced, and how the week builds on earlier editions. Not a fixed checklist.
+9. **06 On the radar**, the forward calendar. Upcoming deadlines, comment periods, expected releases, hearings, and events, dated where known. This is the section readers forward to their teams, so keep it concrete and current.
+10. **07 Deep dive**, one durable concept explained in about 150 words (content provenance, ISO 42001, agent sandboxing, an eval method). Gives the edition lasting reference value beyond the news.
+11. **08 Data**, a quant stat table of fresh numbers not already used in the body, plus a short qualitative read of how the week is being framed.
+
+Two things run through the news items and matter as much as the sections:
+
+- **Tag every item by area.** Governance, Safety, Security, Observability, or Responsible AI, so each reader can scan their slice.
+- **End every item with what it means.** A concrete, specific implication for the relevant persona (product marketer, product manager, researcher, policy lead). Not "lead with trust," but the actual move. This is the point of the newsletter, converting news into a decision.
 
 ## The rules that make it credible
 

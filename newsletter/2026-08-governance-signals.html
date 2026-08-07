@@ -14,7 +14,7 @@
   h3 { color:#16233f; font-size:15px; font-weight:700; margin:16px 0 4px; }
   p { margin:11px 0; font-size:15px; }
   ul { padding-left:20px; margin:10px 0; }
-  li { margin:12px 0; font-size:15px; }
+  li { margin:14px 0; font-size:15px; }
   .eyebrow { text-transform:uppercase; letter-spacing:1.5px; font-size:11px; color:#7a869c; font-weight:700; }
   .masthead { padding:22px 34px 6px; }
   .byline { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:#5b6472; margin-top:8px; border-bottom:1px solid #e6e9f0; padding-bottom:16px; }
@@ -23,18 +23,22 @@
   .cover h1 { font-size:30px; line-height:1.16; font-weight:800; margin:12px 0 0; color:#ffffff; }
   .blurb { font-style:italic; color:#55607a; font-size:14px; }
   .lead { font-weight:700; color:#16233f; }
+  .tag { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.5px; padding:1px 6px; border-radius:3px; margin-right:5px; text-transform:uppercase; background:#eef2fb; color:#2f4f9e; vertical-align:middle; }
   .plain { display:block; background:#f4f7fd; border-left:3px solid #7c8fd0; padding:8px 12px; margin:8px 0 0; font-size:13.5px; color:#38414f; }
   .plain b { color:#1f3d7a; }
-  .sowhat { background:#fff8ec; border-left:3px solid #e0a63a; padding:10px 14px; margin:12px 0; font-size:13.5px; color:#4a4030; }
-  .sowhat b { color:#9a6a12; }
+  .means { display:block; background:#f1f8f2; border-left:3px solid #59a06a; padding:8px 12px; margin:8px 0 0; font-size:13.5px; color:#33463a; }
+  .means b { color:#2c7a44; }
   .tldr { background:#f7f4ff; border:1px solid #e2d9f5; border-radius:5px; padding:16px 20px; margin:18px 0 6px; }
   .tldr h3 { margin-top:0; color:#3a2a86; }
+  .radar { background:#fbf7ef; border:1px solid #ecdcbf; border-radius:5px; padding:8px 18px; margin:12px 0; }
+  .deepdive { background:#f5f7fb; border:1px solid #d9e0ee; border-radius:5px; padding:16px 20px; margin:14px 0; }
+  .deepdive h3 { margin-top:0; }
   table.stat { width:100%; border-collapse:collapse; margin:14px 0; font-size:13.5px; }
   table.stat th { background:#24346b; color:#ffffff; text-align:left; padding:9px 12px; font-size:12.5px; }
   table.stat td { padding:9px 12px; border-bottom:1px solid #dde3ef; vertical-align:top; }
   table.stat td.num { font-weight:700; color:#1f3d7a; white-space:nowrap; }
   .foot { background:#f6f8fc; color:#6b7280; font-size:12.5px; padding:22px 34px 30px; }
-  .tag { display:inline-block; background:#eef2fb; color:#2f4f9e; font-size:11px; font-weight:700; padding:2px 8px; border-radius:3px; letter-spacing:.5px; }
+  .pill { display:inline-block; background:#eef2fb; color:#2f4f9e; font-size:11px; font-weight:700; padding:2px 8px; border-radius:3px; letter-spacing:.5px; }
 </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
   <div class="masthead">
     <div class="eyebrow">Governance Signals &nbsp;&middot;&nbsp; Weekly Roundup</div>
     <div class="byline">
-      <span><strong style="color:#16233f;">Katelyn Rothney</strong> &nbsp;&middot;&nbsp; Week of August 3, 2026 &nbsp;&middot;&nbsp; 9 min read</span>
+      <span><strong style="color:#16233f;">Katelyn Rothney</strong> &nbsp;&middot;&nbsp; Week of August 3, 2026 &nbsp;&middot;&nbsp; 10 min read</span>
       <span><a href="#">View in browser</a></span>
     </div>
   </div>
@@ -55,92 +59,91 @@
 
   <div class="pad">
 
-    <p class="blurb">The weekly roundup of AI governance, safety, and the market, for product marketers, product managers, and policy leads. Everything here happened in the past seven days. What moved, what it actually means in plain terms, and the numbers to cite. Every claim links to its source.</p>
+    <p class="blurb">The weekly roundup of AI governance, safety, security, and observability, for product marketers, PMs, researchers, and policy leads. Everything in the news is from the past seven days. Each item is tagged by area and comes with what it means for your work. Every claim links to its source.</p>
 
     <div class="tldr">
       <h3>This week in 60 seconds</h3>
       <ul style="margin-bottom:0;">
-        <li>The <strong>EU AI Act's enforcement powers went live</strong> on August 2, with fines up to 7% of global turnover. The transparency and content-provenance rules are the part that is live now.</li>
-        <li>The <strong>Trump White House met OpenAI, Anthropic, Google, and Meta</strong> on August 4 on a voluntary framework that gives the government up to 30 days of early access to frontier models for national-security testing. Open-weight models are left out.</li>
-        <li><strong>Anthropic and OpenAI disclosed that their own models broke out of test sandboxes and reached real companies</strong> during cyber evaluations, blamed on human error. Safety tooling kept scaling (Mistral's ShieldStral, NVIDIA's alliance past 120 members).</li>
+        <li><span class="tag">Governance</span> <strong>EU AI Act enforcement went live</strong> on August 2, fines up to 7% of global turnover. The transparency and content-provenance rules are the part that's live now.</li>
+        <li><span class="tag">Governance</span> The <strong>Trump White House met the big labs</strong> on August 4 on a voluntary framework for 30 days of early government access to frontier models. Open-weight models are left out.</li>
+        <li><span class="tag">Security</span> <span class="tag">Safety</span> <strong>Anthropic and OpenAI models broke out of test sandboxes</strong> and reached real companies during cyber evals, blamed on human error.</li>
       </ul>
     </div>
 
     <h2><span class="n">01</span>Policy and regulation</h2>
     <ul>
-      <li><span class="lead">EU enforcement started.</span> As of August 2, the EU AI Office can investigate general-purpose model providers and levy fines up to 35 million euros or 7% of global turnover. The heavy high-risk obligations (for AI in hiring, credit, and the like) were pushed to December 2027 and August 2028, but the Article 50 transparency obligations were not. (<b>Primary:</b> <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission, AI Office</a>. <b>Coverage:</b> <a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/">Gibson Dunn analysis</a>.)
-        <span class="plain"><b>What Article 50 actually requires.</b> The disclosure-and-provenance rule, in four parts. One, if a person is interacting with an AI system such as a chatbot, they have to be told, unless it is obvious. Two, anything a generative model produces must be marked as AI-generated in a machine-readable way, an embedded watermark or provenance signal a machine can detect, not just a visible label. Three, deepfakes have to be disclosed. Four, AI-written text published to inform the public on matters of public interest has to say it is AI-generated. This is why content provenance is suddenly a product requirement.</span>
+      <li><span class="tag">Governance</span> <span class="lead">EU enforcement started.</span> As of August 2, the EU AI Office can investigate general-purpose model providers and fine them up to 35 million euros or 7% of global turnover. The heavy high-risk obligations were pushed to December 2027 and August 2028, but the Article 50 transparency obligations were not. (<b>Primary:</b> <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission, AI Office</a>. <b>Coverage:</b> <a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/">Gibson Dunn</a>.)
+        <span class="plain"><b>What Article 50 actually requires.</b> Tell people when they are interacting with an AI. Mark anything a generative model produces as AI-generated in a machine-readable way, an embedded watermark or provenance signal, not just a visible label. Disclose deepfakes. Flag AI-written text on matters of public interest.</span>
+        <span class="means"><b>What it means.</b> <b>Policy leads:</b> this is your live obligation, disclosure and provenance, while high-risk conformity is still two years out. <b>PMMs:</b> Article-50 readiness is now a claim you can make and competitors can't fake, put a provenance line in the security one-pager.</span>
       </li>
-      <li><span class="lead">The Trump White House pitched early government access.</span> On August 4 the White House convened OpenAI, Anthropic, Google, and Meta to review a voluntary framework that would give the government up to 30 days of early access to frontier models before public release, for confidential national-security evaluation. It builds on a June executive order and is explicitly framed as non-regulatory. Notably, open-weight models are excluded, which critics say hands closed-model vendors a structural advantage. (<b>Primary:</b> <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House executive order</a>. <b>Coverage:</b> <a href="https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html">CNBC</a>, <a href="https://www.axios.com/2026/08/04/trump-ai-framework-open-models">Axios</a>.)
-        <span class="plain"><b>What "early access" means.</b> Labs would voluntarily hand the government a preview of a new model so a security team can test it behind closed doors before launch. There is no fine for opting out, so it is carrot, not stick. Excluding open-weight models is the fight to watch, because it treats open and closed releases as different regulatory categories.</span>
+      <li><span class="tag">Governance</span> <span class="lead">The Trump White House pitched early government access.</span> On August 4 it convened OpenAI, Anthropic, Google, and Meta on a voluntary framework for up to 30 days of pre-release government access to frontier models for national-security evaluation. It builds on a June executive order, is non-regulatory, and excludes open-weight models. (<b>Primary:</b> <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House EO</a>. <b>Coverage:</b> <a href="https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html">CNBC</a>, <a href="https://www.axios.com/2026/08/04/trump-ai-framework-open-models">Axios</a>.)
+        <span class="means"><b>What it means.</b> <b>PMs:</b> if you ship frontier-scale models, early-access participation is about to be a trust signal buyers and agencies look for. <b>Policy leads:</b> the open-weight exclusion is the fight to track, it treats open and closed releases as different regulatory categories.</span>
       </li>
     </ul>
-    <div class="sowhat"><b>So what, for policy leads:</b> the live EU obligation is Article 50, disclosure and machine-readable provenance on anything you generate. The US framework is optional, but if you ship frontier-scale models, early-access participation is about to become a trust signal buyers and governments look for.</div>
 
     <h2><span class="n">02</span>Incidents and safety</h2>
     <ul>
-      <li><span class="lead">Models broke out of the test sandbox.</span> Anthropic disclosed that three of its Claude models, during cybersecurity capture-the-flag evaluations, gained unauthorized access to three real outside organizations. Anthropic attributed it to human error, an external testing partner whose setup accidentally gave the models live internet access, not the models deciding to escape on their own. OpenAI reported a similar incident the same week. (<b>Primary:</b> <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Anthropic writeup</a>. <b>Coverage:</b> <a href="https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/">TechCrunch</a>, <a href="https://www.axios.com/2026/08/04/openai-anthropic-models-hacking-human-error">Axios</a>.)
-        <span class="plain"><b>Why this matters, plainly.</b> This is the first widely-reported case of frontier models reaching real systems they were not supposed to touch during testing. Even with human error as the cause, it shows that once a model is capable of hacking, a misconfigured sandbox is a real-world breach waiting to happen. It is the strongest argument yet for isolated eval environments and for the observability and red-teaming tooling below.</span>
+      <li><span class="tag">Security</span> <span class="tag">Safety</span> <span class="lead">Models broke out of the test sandbox.</span> Anthropic disclosed that three Claude models, during cybersecurity capture-the-flag evaluations, gained unauthorized access to three real outside organizations. It attributed the breach to human error, an external testing partner whose setup accidentally gave the models live internet access. OpenAI reported a similar incident the same week. (<b>Primary:</b> <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Anthropic</a>. <b>Coverage:</b> <a href="https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/">TechCrunch</a>, <a href="https://www.axios.com/2026/08/04/openai-anthropic-models-hacking-human-error">Axios</a>.)
+        <span class="means"><b>What it means.</b> <b>PMs and researchers:</b> if your product runs agents with tool or network access, sandbox isolation and monitoring are now a customer question, not an internal one. <b>Researchers:</b> Anthropic's writeup is worth reading in full for the failure mode, capable model plus misconfigured environment equals a real breach.</span>
       </li>
     </ul>
-    <div class="sowhat"><b>So what, for PMs:</b> if your product runs agents with tool or network access, the eval-environment question is now a customer question. Expect buyers to ask how you sandbox and monitor.</div>
 
     <h2><span class="n">03</span>Company watchlist</h2>
-    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">The same core companies every week, written up only when they move on safety, security, governance, or observability. A quiet week gets noted, because silence is a signal too. A wider rotation bench (including the Chinese labs) appears only on significant news.</p>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">The core roster, written up only on safety, security, governance, or observability news. Silence is noted. The rotation bench, including the Chinese labs, appears only on significant news.</p>
     <ul>
-      <li><span class="lead">OpenAI.</span> Disclosed that one of its models reached a real system during cyber testing, echoing Anthropic's incident, and joined the White House's August 4 framework talks. (<a href="https://www.axios.com/2026/08/04/openai-anthropic-models-hacking-human-error">Axios</a>)</li>
-      <li><span class="lead">Anthropic.</span> Disclosed three Claude models gained unauthorized access to three real organizations during cyber evals, blamed on human error, and sat at the White House framework meeting. (<a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Anthropic</a>)</li>
-      <li><span class="lead">Google.</span> At the White House framework talks. Quiet on product this week.</li>
-      <li><span class="lead">Meta.</span> Also at the White House talks. The framework's exclusion of open-weight models cuts directly against Meta's open strategy, a line to watch. (<a href="https://www.axios.com/2026/08/04/trump-ai-framework-open-models">Axios</a>)</li>
-      <li><span class="lead">xAI.</span> Quiet this week.</li>
-      <li><span class="lead">Mistral.</span> Shipped ShieldStral, a small open-weights safety classifier for text and images, under Apache 2.0. (<a href="https://mistral.ai/news/shieldstral">Mistral</a>)</li>
-      <li><span class="lead">Microsoft.</span> Among the founding members of NVIDIA's Open Secure AI Alliance. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-      <li><span class="lead">Amazon (AWS).</span> Among the founding members of NVIDIA's Open Secure AI Alliance. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-      <li><span class="lead">Apple.</span> Quiet this week.</li>
-      <li><span class="lead">Oracle.</span> Quiet this week.</li>
-      <li><span class="lead">NVIDIA.</span> Its Open Secure AI Alliance passed 120 members within a week of launch and is now run by the Linux Foundation, with a new confidential incident-reporting group. Anthropic and OpenAI are notably absent. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-      <li><span class="lead">AMD.</span> Quiet this week.</li>
-      <li><span class="lead">IBM.</span> Joined NVIDIA's Open Secure AI Alliance. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-      <li><span class="lead">Cohere.</span> Quiet this week.</li>
-      <li><span class="lead">Databricks.</span> Joined NVIDIA's Open Secure AI Alliance. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-      <li><span class="lead">Snowflake.</span> Quiet this week.</li>
-      <li><span class="lead">Palantir.</span> Quiet on governance this week.</li>
-      <li><span class="lead">Hugging Face.</span> Joined NVIDIA's alliance, and hosted the week's open releases including Mistral's ShieldStral. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
-    </ul>
-    <div class="sowhat"><b>So what, for PMMs:</b> the story to message this week is trust, not benchmarks. Two labs just had models breach real systems, and a security alliance is forming without the big three. Whoever can prove a clean, isolated, well-monitored deployment has the pitch.</div>
-
-    <h2><span class="n">04</span>Trends moving this week</h2>
-    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">These build on longer-running trends. The dates below reach back further on purpose, to show where this week's news fits.</p>
-    <ul>
-      <li><span class="lead">Threats got concrete.</span> Models reaching real systems during tests turns the agent-safety worry from theory into an incident report, extending the pattern the UK AI Safety Institute flagged in July.</li>
-      <li><span class="lead">Safety versus speed.</span> The White House chose a voluntary, non-regulatory framework the same week the EU turned on fines. The two philosophies are pulling further apart.</li>
-      <li><span class="lead">Governance as a buying criterion.</span> EU enforcement makes a clean compliance story a reason to sign, not a nice-to-have.</li>
-      <li><span class="lead">Open versus closed.</span> The US framework excluding open-weight models draws a new regulatory line between the two, on top of the price pressure open models already apply.</li>
-      <li><span class="lead">The trust and security market.</span> ShieldStral and the 120-member alliance show trust tooling turning into product and into industry infrastructure.</li>
+      <li><span class="tag">Security</span> <span class="lead">NVIDIA.</span> Its Open Secure AI Alliance passed 120 members within a week and moved under the Linux Foundation, with a new confidential incident-reporting group. Members include Microsoft, Amazon, IBM, Databricks, and Hugging Face. Anthropic and OpenAI stayed out. (<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a>)</li>
+      <li><span class="tag">Safety</span> <span class="lead">Mistral.</span> Shipped ShieldStral, an open-weights safety classifier for text and images. (<a href="https://mistral.ai/news/shieldstral">Mistral</a>)</li>
+      <li><span class="tag">Security</span> <span class="lead">OpenAI and Anthropic.</span> Both disclosed the model eval-escapes in section 02.</li>
+      <li><span class="tag">Governance</span> <span class="lead">Meta and Google.</span> At the White House framework talks in section 01. The open-weight exclusion cuts against Meta's strategy.</li>
+      <li><span class="lead">Quiet this week:</span> xAI, Apple, Oracle, AMD, Cohere, Snowflake, Palantir.</li>
     </ul>
 
-    <h2><span class="n">05</span>Compete and whitespace</h2>
-    <p>Five forces decide who wins right now: cost to serve, distribution, the governance moat, agents, and openness. This week's open lane is proof of safe deployment. After two labs disclosed models breaching real systems, the vendor who can show an isolated, monitored, audit-ready environment, not just claim it, owns the trust pitch. Governance-grade observability and a buyer-ready compliance kit are still wide open.</p>
+    <h2><span class="n">04</span>Trends</h2>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">The throughlines this week's stories surfaced, and how they build on earlier editions. Not a fixed checklist, only what moved.</p>
+    <ul>
+      <li><span class="lead">Enforcement versus encouragement.</span> The EU turned on fines the same week the US pitched a voluntary framework. The two regulatory philosophies keep pulling apart, and a global product now needs a story for both.</li>
+      <li><span class="lead">The agent threat got concrete.</span> Models breaking out of a sandbox and reaching real companies moves agent risk from a theoretical worry to an incident report.</li>
+      <li><span class="lead">Trust tooling is becoming infrastructure.</span> An open safety classifier and a 120-member security alliance in one week show the safety layer turning into product and industry plumbing.</li>
+      <li><span class="lead">Open versus closed is now a regulatory line.</span> The US framework leaving out open-weight models draws a governance distinction on top of the price pressure open models already apply.</li>
+    </ul>
 
-    <h2><span class="n">06</span>Data</h2>
-    <h3>Quant: numbers to cite</h3>
+    <h2><span class="n">05</span>On the radar</h2>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">What is coming, so you can plan for it. Dated where known.</p>
+    <div class="radar">
+      <ul style="margin:8px 0;">
+        <li><span class="lead">Now live.</span> EU AI Act enforcement and GPAI obligations, as of August 2, 2026.</li>
+        <li><span class="lead">December 2, 2027.</span> EU AI Act high-risk rules for standalone systems (hiring, credit, education, and the like) apply, after the Omnibus delay. Start scoping now if you touch these use cases. (<a href="https://artificialintelligenceact.eu/implementation-timeline/">EU AI Act timeline</a>)</li>
+        <li><span class="lead">August 2, 2028.</span> EU AI Act high-risk rules for AI built into regulated products apply.</li>
+        <li><span class="lead">Watch.</span> Finalization of the US voluntary early-access framework following the August 4 industry meeting, and whether open-weight providers push back on the exclusion.</li>
+      </ul>
+    </div>
+
+    <h2><span class="n">06</span>Deep dive: content provenance in practice</h2>
+    <div class="deepdive">
+      <p style="margin-top:0;">Article 50's requirement to mark AI output "in a machine-readable way" is the sentence that turns into engineering work, so here is what it actually means. Provenance is not a visible "made with AI" label. It is a signal embedded in the file, a cryptographic watermark or metadata, that a machine can read to confirm how the content was made, even after it is copied or lightly edited.</p>
+      <p>The emerging standard is <strong>C2PA</strong> (the Coalition for Content Provenance and Authenticity), which attaches signed "content credentials" to an image, video, or audio file. If you ship a generative feature into the EU, the practical question is no longer whether to disclose, but which provenance standard you implement, how it survives your pipeline, and whether a downstream platform can still read it. That is a roadmap item, not a legal footnote.</p>
+      <p style="margin-bottom:0;font-size:13px;color:#6b7280;"><b>Why it is in here:</b> a deep dive each week on one durable concept, so the newsletter is a reference you keep, not just news you skim.</p>
+    </div>
+
+    <h2><span class="n">07</span>Data</h2>
+    <h3>Quant: fresh numbers to pull</h3>
+    <p style="font-size:13px;color:#6b7280;font-style:italic;margin:0 0 4px;">Context stats for a deck or a post, not the figures already above.</p>
     <table class="stat">
       <tr><th>Signal</th><th>What it measures</th><th>Source</th></tr>
-      <tr><td class="num">35M euros / 7%</td><td>Top EU AI Act fine tier, of global annual turnover</td><td><a href="https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline">Holland &amp; Knight</a></td></tr>
-      <tr><td class="num">3 organizations</td><td>Real companies Anthropic's Claude models reached during cyber evals</td><td><a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Anthropic</a></td></tr>
-      <tr><td class="num">30 days</td><td>Early government access to frontier models under the proposed US framework</td><td><a href="https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html">CNBC</a></td></tr>
-      <tr><td class="num">120+</td><td>Member companies in NVIDIA's Open Secure AI Alliance, within a week of launch</td><td><a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">NVIDIA</a></td></tr>
-      <tr><td class="num">28 cents</td><td>Reported price per million output tokens for DeepSeek's V4-Flash</td><td><a href="https://llm-stats.com/ai-news">LLM Stats</a></td></tr>
+      <tr><td class="num">50%</td><td>Enterprises hit by an AI-agent security incident in 2026, as agent deployments surge</td><td><a href="https://www.marketscale.com/industries/software-and-technology/half-of-enterprises-hit-by-ai-agent-security-incidents-as-deployments-surge-digicert-finds">DigiCert</a></td></tr>
+      <tr><td class="num">$3.6B</td><td>2026 funding into agentic-AI security startups, alongside 96 billion dollars in M&amp;A</td><td><a href="https://softwarestrategiesblog.com/2026/03/28/agentic-ai-security-startups-funding-mna-rsac-2026/">Crunchbase data</a></td></tr>
+      <tr><td class="num">10^25 FLOP</td><td>Compute threshold above which the EU AI Act's safety chapter bites, about 5 to 15 companies</td><td><a href="https://artificialintelligenceact.eu/introduction-to-code-of-practice/">EU AI Act</a></td></tr>
+      <tr><td class="num">~26</td><td>Companies that signed the EU GPAI Code of Practice, with Meta declining</td><td><a href="https://artificialintelligenceact.eu/introduction-to-code-of-practice/">EU AI Act</a></td></tr>
     </table>
     <h3>Qualitative: how it is being read</h3>
-    <p style="font-size:14px;">On the model breaches, Axios framed the story as a case of human error rather than AI going rogue, the misconfiguration of a testing partner rather than a model deciding to escape. That framing matters, because it points the fix at how we test, not at pulling the plug. <span style="color:#6b7280;">(<a href="https://www.axios.com/2026/08/04/openai-anthropic-models-hacking-human-error">Axios</a>)</span></p>
+    <p style="font-size:14px;">On the model breaches, Axios framed the story as human error rather than AI going rogue, a misconfigured testing partner rather than a model deciding to escape. That framing matters, because it points the fix at how we test, not at pulling the plug. <span style="color:#6b7280;">(<a href="https://www.axios.com/2026/08/04/openai-anthropic-models-hacking-human-error">Axios</a>)</span></p>
 
   </div>
 
   <div class="foot">
-    <p style="margin:0 0 8px;"><span class="tag">BUILT IN PUBLIC</span></p>
-    <p style="margin:0 0 8px;">Everything in the news sections is from the past seven days. Trends build on longer-running developments and say so. Sources are split: <b>Primary</b> is the regulator or company itself, so you can check the claim. <b>Coverage</b> is a news or analysis take, so you can see how it is being read.</p>
-    <p style="margin:0;">Governance Signals is the weekly roundup generated from the AI Governance and Safety Radar, a public framework other marketers can reuse. Repo: github.com/katearothney/ai-governance-safety-roundup</p>
+    <p style="margin:0 0 8px;"><span class="pill">BUILT IN PUBLIC</span></p>
+    <p style="margin:0 0 8px;">News is from the past seven days, filtered to safety, security, governance, observability, and responsible AI. Items are tagged by area and paired with what they mean for your work. Sources split into <b>Primary</b> (the regulator or company) and <b>Coverage</b> (a news or analysis take).</p>
+    <p style="margin:0;">Governance Signals is generated from the AI Governance and Safety Radar, a public framework other marketers can reuse. Repo: github.com/katearothney/ai-governance-safety-roundup</p>
   </div>
 
 </div>

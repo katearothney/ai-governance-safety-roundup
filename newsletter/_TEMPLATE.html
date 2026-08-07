@@ -2,13 +2,11 @@
 <html lang="en">
 <!--
   Governance Signals, weekly edition template.
-  Copy this file to YYYY-MM-DD-governance-signals.html, fill in the [BRACKETS],
-  and delete the guidance comments. Keep the section order. See STRUCTURE.md.
-  Rules: no em dashes, no semicolons. Every claim gets a link.
-  Past 7 days only in the news sections. Trends may build on older developments (date them).
-    Older context is fine inside a this-week item if it is direct background.
-  Name the actor: the specific office, official, or administration, never just "the US" or "Washington."
-  Source style: (Primary: <the regulator or company>. Coverage: <a news or analysis take>.)
+  Copy to YYYY-MM-DD-governance-signals.html, fill the [BRACKETS], delete these comments. See STRUCTURE.md and PROMPT.md.
+  Lens: only news in safety, security, governance, observability, responsible AI. Past 7 days only in the news sections.
+  Every news item: TAG it by area (Governance/Safety/Security/Observability/Responsible AI) and END it with a concrete "what it means" for a persona.
+  Name the actor (the specific office/official). Explain the substance in plain terms. Split sources: (Primary: ... . Coverage: ... .)
+  No em dashes. No semicolons. Use the % symbol. Every claim links.
 -->
 <head>
 <meta charset="UTF-8">
@@ -24,7 +22,7 @@
   h3 { color:#16233f; font-size:15px; font-weight:700; margin:16px 0 4px; }
   p { margin:11px 0; font-size:15px; }
   ul { padding-left:20px; margin:10px 0; }
-  li { margin:12px 0; font-size:15px; }
+  li { margin:14px 0; font-size:15px; }
   .eyebrow { text-transform:uppercase; letter-spacing:1.5px; font-size:11px; color:#7a869c; font-weight:700; }
   .masthead { padding:22px 34px 6px; }
   .byline { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:#5b6472; margin-top:8px; border-bottom:1px solid #e6e9f0; padding-bottom:16px; }
@@ -33,21 +31,22 @@
   .cover h1 { font-size:30px; line-height:1.16; font-weight:800; margin:12px 0 0; color:#ffffff; }
   .blurb { font-style:italic; color:#55607a; font-size:14px; }
   .lead { font-weight:700; color:#16233f; }
+  .tag { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.5px; padding:1px 6px; border-radius:3px; margin-right:5px; text-transform:uppercase; background:#eef2fb; color:#2f4f9e; vertical-align:middle; }
   .plain { display:block; background:#f4f7fd; border-left:3px solid #7c8fd0; padding:8px 12px; margin:8px 0 0; font-size:13.5px; color:#38414f; }
   .plain b { color:#1f3d7a; }
-  .sowhat { background:#fff8ec; border-left:3px solid #e0a63a; padding:10px 14px; margin:12px 0; font-size:13.5px; color:#4a4030; }
-  .sowhat b { color:#9a6a12; }
+  .means { display:block; background:#f1f8f2; border-left:3px solid #59a06a; padding:8px 12px; margin:8px 0 0; font-size:13.5px; color:#33463a; }
+  .means b { color:#2c7a44; }
   .tldr { background:#f7f4ff; border:1px solid #e2d9f5; border-radius:5px; padding:16px 20px; margin:18px 0 6px; }
   .tldr h3 { margin-top:0; color:#3a2a86; }
-  .quote { background:#191341; color:#ffffff; padding:26px 30px; margin:16px 0; border-radius:4px; }
-  .quote p { font-family:Georgia,'Times New Roman',serif; font-size:19px; line-height:1.4; margin:0; color:#ffffff; }
-  .quote .attr { font-family:'Segoe UI',Arial,sans-serif; font-size:12.5px; color:#b9b0e6; margin-top:12px; }
+  .radar { background:#fbf7ef; border:1px solid #ecdcbf; border-radius:5px; padding:8px 18px; margin:12px 0; }
+  .deepdive { background:#f5f7fb; border:1px solid #d9e0ee; border-radius:5px; padding:16px 20px; margin:14px 0; }
+  .deepdive h3 { margin-top:0; }
   table.stat { width:100%; border-collapse:collapse; margin:14px 0; font-size:13.5px; }
   table.stat th { background:#24346b; color:#ffffff; text-align:left; padding:9px 12px; font-size:12.5px; }
   table.stat td { padding:9px 12px; border-bottom:1px solid #dde3ef; vertical-align:top; }
   table.stat td.num { font-weight:700; color:#1f3d7a; white-space:nowrap; }
   .foot { background:#f6f8fc; color:#6b7280; font-size:12.5px; padding:22px 34px 30px; }
-  .tag { display:inline-block; background:#eef2fb; color:#2f4f9e; font-size:11px; font-weight:700; padding:2px 8px; border-radius:3px; letter-spacing:.5px; }
+  .pill { display:inline-block; background:#eef2fb; color:#2f4f9e; font-size:11px; font-weight:700; padding:2px 8px; border-radius:3px; letter-spacing:.5px; }
 </style>
 </head>
 <body>
@@ -63,74 +62,79 @@
 
   <div class="cover">
     <div class="eyebrow">AI Governance &amp; Safety &nbsp;&middot;&nbsp; [WEEK OF DATE]</div>
-    <!-- The cover headline is the single biggest story of the week, plain and specific. -->
     <h1>[THE WEEK'S HEADLINE]</h1>
   </div>
 
   <div class="pad">
 
-    <p class="blurb">The weekly roundup of AI governance, safety, and the market, for product marketers, product managers, and policy leads. What moved this week, what each rule or product actually requires in plain terms, what it means for your team, and the numbers to cite. Every claim links to its source.</p>
+    <p class="blurb">The weekly roundup of AI governance, safety, security, and observability, for product marketers, PMs, researchers, and policy leads. Everything in the news is from the past seven days. Each item is tagged by area and comes with what it means for your work. Every claim links to its source.</p>
 
     <div class="tldr">
       <h3>This week in 60 seconds</h3>
       <ul style="margin-bottom:0;">
-        <li>[Biggest thing.]</li>
-        <li>[Second thing.]</li>
-        <li>[Third thing.]</li>
-        <li>The throughline: [the one sentence that ties the week together].</li>
+        <li><span class="tag">[Area]</span> <strong>[Biggest thing].</strong> [One sentence.]</li>
+        <li><span class="tag">[Area]</span> <strong>[Second thing].</strong> [One sentence.]</li>
+        <li><span class="tag">[Area]</span> <strong>[Third thing].</strong> [One sentence.]</li>
       </ul>
     </div>
 
     <h2><span class="n">01</span>Policy and regulation</h2>
     <ul>
-      <li><span class="lead">[Headline phrase].</span> [What happened, in a sentence or two.] (<b>Primary:</b> <a href="#">[the regulator or agency]</a>. <b>Coverage:</b> <a href="#">[a news or analysis take]</a>.)
-        <span class="plain"><b>What this actually requires.</b> [Explain the substance in plain terms, so a reader learns the rule, not just that it happened. This is where you unpack things like Article 50, content provenance, or a code of practice.]</span>
+      <li><span class="tag">[Area]</span> <span class="lead">[Headline phrase].</span> [What happened. Name the actor.] (<b>Primary:</b> <a href="#">[regulator]</a>. <b>Coverage:</b> <a href="#">[a take]</a>.)
+        <span class="plain"><b>What this actually requires.</b> [Explain the substance in plain terms.]</span>
+        <span class="means"><b>What it means.</b> <b>[Persona]:</b> [the concrete move].</span>
       </li>
     </ul>
-    <div class="sowhat"><b>So what, for policy leads:</b> [the near-term action or implication].</div>
 
-    <h2><span class="n">02</span>Company watchlist</h2>
+    <h2><span class="n">02</span>Incidents and safety</h2>
     <ul>
-      <li><span class="lead">[Company].</span> [What they shipped or said, plus a plain-terms note on what it does.] Watch: [the one thing to watch]. (<b>Primary:</b> <a href="#">[company site]</a>. <b>Coverage:</b> <a href="#">[a take]</a>.)</li>
-      <!-- Do a pass over the whole watchlist: OpenAI, Anthropic, Mistral, Cohere, Microsoft, Google, AWS, IBM, NVIDIA, Databricks, and the hot ones. Note who went quiet. -->
-    </ul>
-    <div class="sowhat"><b>So what, for PMMs:</b> [the positioning read].</div>
-
-    <h2><span class="n">03</span>Startups (Series D and below)</h2>
-    <ul>
-      <li><span class="lead">[Startup and what happened].</span> [What the company does, in plain terms.] (<b>Primary:</b> <a href="#">[company]</a>. <b>Coverage:</b> <a href="#">[a take]</a>.)</li>
-      <!-- Categories: governance, observability, evals, agent frameworks, AI safety, responsible AI. -->
-    </ul>
-    <div class="sowhat"><b>So what, for PMs:</b> [what becomes table stakes].</div>
-
-    <h2><span class="n">04</span>Trends moving this week</h2>
-    <ul>
-      <li><span class="lead">[Trend].</span> [How this week's news bent it.]</li>
-      <!-- Pull from the trends files: safety vs speed, governance as a buying criterion, sovereignty, guardrails, observability, geographic, threats, price collapse, agents, open vs closed, the trust/safety/security market. Only the ones that moved. -->
+      <li><span class="tag">[Area]</span> <span class="lead">[What happened].</span> [Careful with the facts, allegation separate from proven.] (<b>Primary:</b> <a href="#">[source]</a>. <b>Coverage:</b> <a href="#">[a take]</a>.)
+        <span class="means"><b>What it means.</b> <b>[Persona]:</b> [the concrete move].</span>
+      </li>
     </ul>
 
-    <h2><span class="n">05</span>Compete and whitespace</h2>
-    <p>[The five forces read for the week, and the open lane nobody has claimed yet.]</p>
+    <h2><span class="n">03</span>Company watchlist</h2>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">The core roster, written up only on safety, security, governance, or observability news. Silence is noted. The rotation bench appears only on significant news.</p>
+    <ul>
+      <li><span class="tag">[Area]</span> <span class="lead">[Company].</span> [What moved, in the lens.] (<a href="#">[source]</a>)</li>
+      <li><span class="lead">Quiet this week:</span> [names].</li>
+    </ul>
 
-    <h2><span class="n">06</span>Data</h2>
-    <h3>Quant: numbers to cite</h3>
+    <h2><span class="n">04</span>Trends</h2>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">The throughlines this week's stories surfaced, and how they build on earlier editions. Not a fixed checklist, only what moved.</p>
+    <ul>
+      <li><span class="lead">[Trend].</span> [How this week's news moved it, or how it continues a prior arc.]</li>
+    </ul>
+
+    <h2><span class="n">05</span>On the radar</h2>
+    <p style="font-size:13.5px;color:#6b7280;font-style:italic;">What is coming, so you can plan for it. Dated where known.</p>
+    <div class="radar">
+      <ul style="margin:8px 0;">
+        <li><span class="lead">[Date].</span> [Upcoming deadline, release, hearing, comment period, or event.] (<a href="#">source</a>)</li>
+      </ul>
+    </div>
+
+    <h2><span class="n">06</span>Deep dive: [topic]</h2>
+    <div class="deepdive">
+      <p style="margin-top:0;">[About 150 words on one durable concept, so the edition is a reference, not just news.]</p>
+    </div>
+
+    <h2><span class="n">07</span>Data</h2>
+    <h3>Quant: fresh numbers to pull</h3>
+    <p style="font-size:13px;color:#6b7280;font-style:italic;margin:0 0 4px;">Context stats for a deck or a post, not the figures already above.</p>
     <table class="stat">
       <tr><th>Signal</th><th>What it measures</th><th>Source</th></tr>
       <tr><td class="num">[number]</td><td>[what it measures]</td><td><a href="#">[source]</a></td></tr>
     </table>
-    <h3>Qualitative: what they said</h3>
-    <div class="quote">
-      <p>&ldquo;[The quote of the week.]&rdquo;</p>
-      <div class="attr">[Who, where] (<a href="#" style="color:#b9b0e6;">source</a>)</div>
-    </div>
-    <p style="font-size:14px;">&ldquo;[A second quote.]&rdquo; <span style="color:#6b7280;">[Who] (<a href="#">source</a>)</span></p>
+    <h3>Qualitative: how it is being read</h3>
+    <p style="font-size:14px;">[A short read of how the week's key story is being framed.] <span style="color:#6b7280;">(<a href="#">source</a>)</span></p>
 
   </div>
 
   <div class="foot">
-    <p style="margin:0 0 8px;"><span class="tag">BUILT IN PUBLIC</span></p>
-    <p style="margin:0 0 8px;">Sources are split where it helps. <b>Primary</b> is the regulator or company itself (the EU AI Office, a company site), so you can check the claim at the source. <b>Coverage</b> is a news or analysis outlet's take on it, so you can see how it is being read.</p>
-    <p style="margin:0;">Governance Signals is the weekly roundup generated from the AI Governance and Safety Radar, a public framework other marketers can reuse. Every claim links to its source. Repo: github.com/katearothney/ai-governance-safety-roundup</p>
+    <p style="margin:0 0 8px;"><span class="pill">BUILT IN PUBLIC</span></p>
+    <p style="margin:0 0 8px;">News is from the past seven days, filtered to safety, security, governance, observability, and responsible AI. Items are tagged by area and paired with what they mean for your work. Sources split into <b>Primary</b> (the regulator or company) and <b>Coverage</b> (a news or analysis take).</p>
+    <p style="margin:0;">Governance Signals is generated from the AI Governance and Safety Radar, a public framework other marketers can reuse. Repo: github.com/katearothney/ai-governance-safety-roundup</p>
   </div>
 
 </div>
