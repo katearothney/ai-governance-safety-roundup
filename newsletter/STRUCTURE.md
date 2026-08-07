@@ -14,7 +14,9 @@ Every weekly edition of Governance Signals follows the same shape, so they stack
 8. **05 Compete and whitespace**, the five forces read, and the open lane nobody has claimed.
 9. **06 Data**, a quant stat table and one or two qualitative quotes.
 
-## The two rules that make it credible
+## The rules that make it credible
+
+**Name the actor.** Never write "Washington," "the US," "Brussels," or "the government" when you can name the specific office, official, or administration behind a move. Not "the US finalized voluntary tests," but "the Trump administration finalized voluntary tests, announced by a White House official." Not "the AI safety chief resigned," but "Chris Fall, director of CAISI, the Commerce Department's AI safety arm, resigned." The specificity is what makes it read like reporting instead of a summary. If you cannot verify the name or office, say so rather than staying vague or guessing.
 
 **Explain the substance, do not just report it.** When a rule or product shows up, say what it actually requires or does, in plain terms. A reader should learn what Article 50 is (disclosure and machine-readable content provenance), not just that it went live. Use the light-blue explainer box (`.plain`) for this.
 
